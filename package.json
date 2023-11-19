@@ -1,0 +1,36 @@
+{
+  "name": "online-editor-utils",
+  "private": false,
+  "version": "1.0.3",
+  "type": "module",
+  "types": "lib/main.d.ts",
+  "main": "dist/online-editor-utils.cjs",
+  "module": "dist/online-editor-utils.js",
+  "keywords": [
+    "@webcontainer/api@1.1.8",
+    "localDirectory",
+    "zip"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build && tsc -p tsconfig.build.json",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@types/node": "^20.9.2",
+    "@types/uuid": "^9.0.7",
+    "@webcontainer/api": "^1.1.8",
+    "typescript": "^5.2.2",
+    "vite": "^5.0.0"
+  },
+  "license": "MIT",
+  "files": [
+    "dist",
+    "lib",
+    "tsconfig.json"
+  ],
+  "dependencies": {
+    "jszip": "^3.10.1",
+    "uuid": "^9.0.1"
+  }
+}
